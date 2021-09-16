@@ -1,21 +1,27 @@
 class Rectangle
 {
-	int length,breadth;
-        void setval(int l,int b);
+    int length;
+    int breath;
+    void setval(int l,int b)
+    {
+        length=l;
+        breath=b;
+    }
+    int area()
+    {
+        int ar;
+        ar=length*breath;
+        return ar;
+    }
+	public static void main(String args[]) 
 	{
-		length=l;
-		breadth=b;
-	}
-	int area()
-	{
-		int ar=length*breadth;
-		return ar;
-	}	
-	public static void main(String args[])
-	{
-		Rectangle fobj = new Rectangle();
-		fobj.setval(10,20);
-		int area=fobj.area();
-		System.out.println(area);	
+	    Rectangle frect = new Rectangle();
+		frect.setval(6,8);
+		int area=frect.area();
+                System.out.println("Area is:"+area);
 	}
 }
+
+    
+ 
+ 
